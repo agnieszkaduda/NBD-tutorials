@@ -1,0 +1,40 @@
+MongoDB shell version v4.4.1
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("44b9a6d3-191a-4abf-91dc-1e14a689fa0a") }
+MongoDB server version: 4.4.1
+[
+	{
+		"_id" : {
+			"sex" : "Male"
+		},
+		"avgWeight" : 70.00976575121163,
+		"avgHeight" : 166.7346950726979
+	},
+	{
+		"_id" : {
+			"sex" : "Female"
+		},
+		"avgWeight" : 70.11024766544864,
+		"avgHeight" : 166.8132561916362
+	}
+]
+MongoDB shell version v4.4.1
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("31e00885-09ea-47b8-8dd7-5a3f7b8f8d3a") }
+MongoDB server version: 4.4.1
+[
+	{
+		"_id" : {
+			"sex" : "Male"
+		},
+		"avgWeight" : 70.00976575121163,
+		"avgHeight" : 166.7346950726979
+	},
+	{
+		"_id" : {
+			"sex" : "Female"
+		},
+		"avgWeight" : 70.11024766544864,
+		"avgHeight" : 166.8132561916362
+	}
+]

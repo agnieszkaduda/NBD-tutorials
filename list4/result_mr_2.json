@@ -1,0 +1,16 @@
+MongoDB shell version v4.4.1
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("5f20afe8-fb53-49e3-aedd-1afd20ee59dd") }
+MongoDB server version: 4.4.1
+uncaught exception: TypeError: db.people.mapReduce(...).toArray is not a function :
+@query_mr_2.js:15:11
+failed to load: query_mr_2.js
+exiting with code -3
+MongoDB shell version v4.4.1
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("7b7e8aaf-4e83-4082-bc54-55d5c40fe59d") }
+MongoDB server version: 4.4.1
+uncaught exception: TypeError: db.people.mapReduce(...).toArray is not a function :
+@query_mr_2.js:15:11
+failed to load: query_mr_2.js
+exiting with code -3
