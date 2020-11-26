@@ -1,0 +1,1 @@
+match (movie:Movie {title: 'Captain America: The First Avenger'})-[]-(actor:Person) return movie, actor

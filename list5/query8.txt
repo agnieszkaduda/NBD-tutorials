@@ -1,0 +1,1 @@
+match (movie:Movie) where (movie)<-[:ACTED_IN]-(:Person {name: "Hugo Weaving"}) and (movie)<-[:ACTED_IN]-(:Person {name: "Keanu Reeves"}) return movie

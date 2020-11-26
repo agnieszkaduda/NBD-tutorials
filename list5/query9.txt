@@ -1,0 +1,15 @@
+CREATE (CaptainAmericaFirstAvenger:Movie {title:'Captain America: The First Avenger', released: 2011})
+CREATE (ChrisEvans:Person {name: 'Chris Evans'})
+CREATE (HayleyAtwell:Person {name: 'Perry Carter'})
+CREATE (SebastianStan:Person {name: 'Sebastian Stan'})
+CREATE (TommyLeeJones: Person {name: 'Tommy Lee Jones'})
+CREATE (ChristopherMarkus: Person {name: 'Christopher Markus'})
+CREATE (StephenMcFeely:Person {name: 'Stephen McFeely'})
+CREATE (JoeJohnston:Person {name: 'Joe Johnston'})
+CREATE
+(ChrisEvans)-[:ACTED_IN {roles:['Captain America','Steve Rogers']}]->(CaptainAmericaFirstAvenger),
+(HayleyAtwell)-[:ACTED_IN {roles:['Peggy Carter']}]->(CaptainAmericaFirstAvenger),
+(SebastianStan)-[:ACTED_IN {roles:['James Buchanan Bucky Barnes']}]->(CaptainAmericaFirstAvenger),
+(ChristopherMarkus)-[:WROTE]->(CaptainAmericaFirstAvenger),
+(StephenMcFeely)-[:WROTE]->(CaptainAmericaFirstAvenger),
+(JoeJohnston)-[:DIRECTED]->(CaptainAmericaFirstAvenger)

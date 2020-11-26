@@ -1,0 +1,1 @@
+match (actor:Person)-[:ACTED_IN]->(movie:Movie) return actor.name, size(collect(movie)) as count
