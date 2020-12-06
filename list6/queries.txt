@@ -1,0 +1,53 @@
+1.
+match path = shortestPath((t:town {name: "Darjeeling"})-[*]->(p:peak {name: "Sandakphu"})) 
+where all(r in relationships(path) where r.winter = "true")
+return path
+
+2.
+match path = (t:town {name: "Darjeeling"})-[*]->(p:peak {name: "Sandakphu"}) 
+return reduce(ac=0, r in relationships(path) | ac + r.distance) as distance, path
+order by distance
+
+3. 
+match path = (t:town {name: "Darjeeling"})-[b:twowheeler *]->(p:peak {name: "Sandakphu"})
+where all(r in relationships(path) where r.summer = 'true')
+return path
+
+4.
+match (a:Airport)<-[:ORIGIN]-(f:Flight)
+return a, count(f) as departures
+order by departures
+ 
+5.
+match (lax:Airport {name:"LAX"})-[r:ROUTE*]->(a:Airport)
+where reduce(price=0,x IN r|price+x.minPrice)<3000
+return lax, r, a
+ 
+6.
+match connections = (lax:Airport {name: "LAX"})-[t *1..3]->(day:Airport {name: "DAY"})
+with connections as connections, reduce(totalPrice=0, c in relationships(connections) | totalPrice + c.price) as totalPrice
+return connections, totalPrice
+order by totalPrice
+ 
+7.
+match connections = (lax:Airport {name: "LAX"})-[t *1..3]->(day:Airport {name: "DAY"})
+with connections as connections, reduce(totalPrice=0, c in relationships(connections) | totalPrice + c.price) as totalPrice
+return min(totalPrice)
+ 
+8.
+match connections = (lax:Airport {name: "LAX"})-[t:BUSINESS_FLIGHT *1..3]->(day:Airport {name: "DAY"})
+with connections as connections, reduce(totalPrice=0, c in relationships(connections) | totalPrice + c.price) as totalPrice
+return min(totalPrice)
+ 
+9.
+match (source: Airport)-[]-()-[]-(destination:Airport)
+with source, size(collect(distinct destination)) as destinations
+return source, destinations
+
+10.
+match route = (a1: Airport)<-[:ORIGIN]-(firstFlight:Flight)-[:DESTINATION]->(a2:Airport)<-[:ORIGIN]-(secondFlight:Flight)-[:DESTINATION]->(a3:Airport), (fristFlight)-[:ASSIGN]-(t1:Ticket), (secondFlight)-[:ASSIGN]-(t2:Ticket)
+where a1 <> a2
+with route, t1.price + t2.price as totalPrice
+return route, totalPrice 
+order by totalPrice
+limit 1

@@ -1,0 +1,156 @@
+﻿[
+  {
+    "route": {
+"start": {
+"identity": 17,
+"labels": [
+          "Airport"
+        ],
+"properties": {
+"name": "ORD"
+        }
+      },
+"end": {
+"identity": 48,
+"labels": [
+          "Airport"
+        ],
+"properties": {
+"name": "PBI"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 17,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "ORD"
+            }
+          },
+          "relationship": {
+"identity": 532,
+"start": 485,
+"end": 17,
+"type": "ORIGIN",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 485,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "11/29/2015 18:20:30",
+"duration": 152,
+"distance": 1197,
+"airline": "19977"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 485,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "11/29/2015 18:20:30",
+"duration": 152,
+"distance": 1197,
+"airline": "19977"
+            }
+          },
+          "relationship": {
+"identity": 533,
+"start": 485,
+"end": 49,
+"type": "DESTINATION",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 49,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "MIA"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 49,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "MIA"
+            }
+          },
+          "relationship": {
+"identity": 1042,
+"start": 893,
+"end": 49,
+"type": "ORIGIN",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 893,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "11/24/2015 01:31:18",
+"duration": 20,
+"distance": 62,
+"airline": "20304"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 893,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "11/24/2015 01:31:18",
+"duration": 20,
+"distance": 62,
+"airline": "20304"
+            }
+          },
+          "relationship": {
+"identity": 1043,
+"start": 893,
+"end": 48,
+"type": "DESTINATION",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 48,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "PBI"
+            }
+          }
+        }
+      ],
+"length": 4.0
+    },
+    "totalPrice": 119.0
+  }
+]
