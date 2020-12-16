@@ -1,0 +1,5 @@
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Bread", "type": "Baking", "price": 5, "quantity": 1}' http://localhost:8098/buckets/s21998/keys/bread
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Milk", "type": "Dairy", "price": 4, "quantity": 2}' http://localhost:8098/buckets/s21998/keys/milk
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Ravioli", "type": "Pasta", "price": 15, "quantity": 1}' http://localhost:8098/buckets/s21998/keys/ravioli
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Apple", "type": "Fruit", "price": 1, "quantity": 5}' http://localhost:8098/buckets/s21998/keys/apple
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Cucumber", "type": "Vegetable", "price": 2, "quantity": 2}' http://localhost:8098/buckets/s21998/keys/cucumber

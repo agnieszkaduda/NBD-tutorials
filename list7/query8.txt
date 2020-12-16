@@ -1,0 +1,1 @@
+curl -i -XPOST -H "Content-Type: application/json" -d '{"name": "Potato", "type": "Vegetable", "price": 1, "quantity": 2}' http://localhost:8098/buckets/s21998/keys/

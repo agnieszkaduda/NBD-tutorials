@@ -1,0 +1,1 @@
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Apple", "type": "Fruit", "price": 1, "quantity": 5, "idk": "xyz"}' http://localhost:8098/buckets/s21998/keys/apple

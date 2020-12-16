@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl9sJ/ICIpTImMfKUPzT7yZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s21998>; rel="up"
+Last-Modified: Wed, 16 Dec 2020 21:34:43 GMT
+ETag: "Ubk9vaYsQsMu4LJf0Nbhy"
+Date: Wed, 16 Dec 2020 21:35:07 GMT
+Content-Type: application/json
+Content-Length: 60
+
+{"name": "Milk", "type": "Dairy", "price": 4, "quantity": 2}
