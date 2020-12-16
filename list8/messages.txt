@@ -1,0 +1,2 @@
+Added document: {'name': 'Pineapple', 'type': 'Fruit', 'price': '8', 'quantity': '1'}
+Document after update: {'name': 'Banana', 'type': 'Fruit', 'price': '8', 'quantity': '1'}
