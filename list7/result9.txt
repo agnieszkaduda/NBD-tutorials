@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl9sb7ANIpTImMfKkPTH7yZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s21998>; rel="up"
+Last-Modified: Wed, 16 Dec 2020 21:47:14 GMT
+ETag: "3Ho7kLQG4VeterC4Ngq7eG"
+Date: Thu, 17 Dec 2020 18:38:15 GMT
+Content-Type: application/json
+Content-Length: 66
+
+{"name": "Potato", "type": "Vegetable", "price": 1, "quantity": 2}
